@@ -41,7 +41,7 @@ func SendByDingTalkRobot(messageType, message, title, robotURL string) (bool, er
 func main(){
 
 	msgType := "markdown"
-	msg := "golang测试msg"
+	msg := "## golang测试msg \n\n #### 这是一条测试消息 \n\n #### 来自于golang接口 \n"
 	title := "golang测试 title"
 	robotURL := ""
 	_, err := SendByDingTalkRobot(msgType, msg, title, robotURL)
